@@ -1,5 +1,7 @@
 App(
     appid="wifi_tracker",
+    author: NazarHK,
+    version: 1.0.0,
     name="WiFi Tracker",
     apptype=FlipperAppType.MENUEXTERNAL,
     entry_point="wifi_tracker_app",  # Entry point function in the app
