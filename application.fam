@@ -1,15 +1,12 @@
-App(
-    appid="wifi_tracker",
-    author: NazarHK,
-    version: 1.0.0,
-    name="WiFi Tracker",
-    apptype=FlipperAppType.MENUEXTERNAL,
-    entry_point="wifi_tracker_app",  # Entry point function in the app
-    stack_size=2 * 1024,  # 2 KB stack size for the app
-    icon="icon-10x10",  # App icon for display in the Flipper menu
-    order=70,  # Menu position
-    resources="images",  # Folder for app resources (like images, etc.)
-    fap_libs=[],  # No external libraries, everything is part of the project
-    fap_icon="icon-10x10.png",  # Icon file (must be 10x10 px)
-    fap_category="Tools",  # Category for the app
-)
+appid: wifi_tracker
+author: NazarHK
+version: 1.0.0
+name: WiFi Tracker
+apptype: EXTERNAL
+entry_point: wifi_tracker_app
+stack_size: 2048
+icon: icon-10x10
+order: 70
+resources: images
+fap_category: Tools
+weburl: https://github.com/nazarhktwitch/flipper-wifi-tracker
