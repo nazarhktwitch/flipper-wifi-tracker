@@ -1,0 +1,28 @@
+#include "wifi_module.h"
+#include <stdio.h>
+
+void wifi_init() {
+    // Инициализация Wi-Fi
+    printf("Wi-Fi initialized\n");
+}
+
+void wifi_connect(const char* ssid, const char* password) {
+    // Соединение с Wi-Fi сетью
+    printf("Connecting to SSID: %s with password: %s\n", ssid, password);
+}
+
+WifiNetwork* wifi_scan_networks(int* count) {
+    // Сканирование доступных сетей
+    static WifiNetwork networks[] = {
+        {"Network1", -40},
+        {"Network2", -50},
+        {"Network3", -60},
+    };
+    *count = sizeof(networks) / sizeof(WifiNetwork);
+    return networks;
+}
+
+int wifi_get_signal_strength() {
+    // Получение силы сигнала
+    return -45; // Пример значения RSSI
+}

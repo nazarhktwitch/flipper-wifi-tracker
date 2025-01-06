@@ -1,0 +1,11 @@
+App(
+    appid="wifi_tracker",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="wifi_tracker_app",
+    stack_size=2048,
+    order=70,
+    fap_libs=[],
+    fap_icon="icon-10x10.png",
+    fap_category="Tools",
+    icon="icon-10x10"
+)
